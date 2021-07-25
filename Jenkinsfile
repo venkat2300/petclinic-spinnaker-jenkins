@@ -21,6 +21,7 @@ pipeline {
                 }
             }
         }
+        /*
         stage('Build Docker Image') {
             when {
                 branch 'master'
@@ -54,6 +55,6 @@ pipeline {
                 sh("docker rmi -f venkat2300/petclinic-spinnaker-jenkins:latest || :")
                 sh("docker rmi -f venkat2300/petclinic-spinnaker-jenkins:$SHORT_COMMIT || :")
             }
-        }
+        }*/
     }
 }
